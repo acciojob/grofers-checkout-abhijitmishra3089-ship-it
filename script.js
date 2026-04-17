@@ -6,7 +6,7 @@ const getSum = () => {
 const prices=Document.quereySelectorAll('.price');
 	let total=0;
 	prices.forEach((price)=>{
-  total+=Number(prices.textcontent);
+  total+=Number(price.textcontent);
 		});
 	const newrow=Documennt.createElement("tr");
 	const cell=Documennt.createElement('td');
