@@ -8,15 +8,14 @@ const getSum = () => {
   let total = 0;
 
   prices.forEach((price) => {
-    total +=price.textContent.match(/\d+$/);
-	  total += value ? Number(value[0]) : 0;
+    total += Number(price.textContent);
   });
 
   const newRow = document.createElement("tr");
   const cell = document.createElement("td");
 
   cell.colSpan = 2;
-	cell.id="ans";
+	cell.id="ans"
   cell.textContent = total;
 
   newRow.appendChild(cell);
