@@ -14,8 +14,8 @@ const getSum = () => {
   const newRow = document.createElement("tr");
   const cell = document.createElement("td");
 
-  cell.colSpan = 2;
-	cell.id="ans"
+  cell.colSpan = 1;
+	cell.id="ans";
   cell.textContent = total;
 
   newRow.appendChild(cell);
